@@ -1,0 +1,164 @@
+.budget {
+    margin-top: 10px;
+    background-image: url(../img/budget2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 5%;
+    &_page {
+        display: flex;
+    }
+    &_image {
+        z-index: 0;
+        padding-top: 20px;
+        img {
+            width: 500px;
+            height: 90vh;
+            margin-top: -45px;
+            margin-left: -18%;
+            border: 3px solid $color-white;
+            border-left: none;
+        }
+    }
+    &_content {
+        width: calc(100%/2);
+        background-color: rgba(240, 240, 240, .8);
+        border-radius: 10px;;
+        height: 450px;
+        padding: 10px;
+        font-family: $font;
+        z-index: 2;
+        margin-left: 13%;
+        margin-top: 3%;
+        img {
+            width: 200px;
+            height: 180px;
+            border-radius: 10px;
+        }
+        .budget_title {
+            font-size: 25px;
+            color: $color-blue;
+            font-weight: 600;
+        }
+        .budget_desc {
+            font-size: 20px;
+        }
+    }
+}
+.images_block {
+    display: flex;
+}
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	padding: 0;
+	cursor: pointer;
+	font-size: 32px;
+	line-height: 32px;
+	color: $color-white;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: $color-blue;
+	text-shadow: 1px 1px $color-blue;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: $color-blue;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: $color-white;
+	text-shadow: 1px 1px $color-blue;
+}
+.rate-area > label:active {
+	position: relative;
+}
+@media screen and (max-width: 1199px) {
+    .budget_image img {
+        width: 400px;
+        height: 80vh;
+        margin-top: -1px;
+        margin-left: -28%;
+    } 
+    .budget_content {
+        margin-left: 10%;
+        margin-top: 6%;
+        .budget_desc {
+            font-size: 18px;
+        }
+        img {
+            width: 190px;
+            height: 170px
+        }
+    }
+    .rating-area:not(:checked) > label {
+        line-height: 20px;
+    }
+ }
+ @media screen and (max-width: 991px) {
+    .budget_content {
+        width: 90%;
+        margin-top: 0;
+        .budget_title {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+        .budget_desc {
+            font-size: 20px;
+            padding-bottom: 17px;
+        }
+    }
+    .budget_image {
+        display: none;
+    }
+    .images_block_1 {
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width: 767px) {
+    .budget_content {
+        margin-left: 6%;
+        .budget_title {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+    .budget_desc {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+    }
+}
+@media screen and (max-width: 575px) {
+    .budget_content {
+        margin-left: 0;
+        width: 97%;
+        height: 490px;
+        margin-left: 5px;
+        img {
+            width: 140px;
+            height: 110px;
+        }
+    }
+    .rating-area:not(:checked) > label {
+        font-size: 24px;
+    }
+}
+    
+
