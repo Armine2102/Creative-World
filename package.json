@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/style.scss css/style.css -w"
+    "watch:sass": "node-sass scss/style.scss css/style.css -w",
+    "deploy": "gh-pages -d watch:sass"
   },
   "keywords": [],
   "author": "",
