@@ -1,0 +1,86 @@
+.people {
+    margin-top: 5px;
+    &_title {
+        @include title;
+    }
+    &_content {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-family: $font;
+        &_block {
+            width: calc(100%/5);
+            background-color: $color-grey_1;
+            margin-top: 90px;
+            border-radius: 10px;
+            padding: 30px;
+        }
+    }
+    &_img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: -45% auto 0;
+        background-color: $color-white;
+        display: block;
+        transition: all .3s ease-in-out;
+        border: 3px solid $color-white;
+        &:hover {
+            transform: translateY(-15px);
+            border-color: $color-title;
+            cursor: pointer;
+        }
+    }
+    &_name {
+        font-size: 20px;
+        font-weight: 600;
+        &:hover {
+            color: $color-title;
+            cursor: pointer;
+        }
+    }
+    &_text {
+        font-size: 18px;
+        color: $color-title;
+    }
+    &_tel {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        &:hover {
+            color: $color-title;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .people_title {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .people_content {
+        flex-wrap: wrap;
+        &_block {
+            width: 300px;
+            padding: 30px;
+        }
+    }
+    .people_img {
+        margin: -40% auto 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .people_title {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .people_title {
+        font-size: 25px;
+    }
+    .people_img:active {
+        transform: translateY(-15px);
+        border: 3px solid $color-title;
+    }
+}

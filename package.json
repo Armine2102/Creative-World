@@ -1,0 +1,22 @@
+{
+  "homepage": "https://armine2102.github.io/Creative-World",
+  "name": "world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass scss/style.scss css/style.css -w",
+    "dev": "node-sass scss/style.scss css/style.css",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d . -b gh-pages -x node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
