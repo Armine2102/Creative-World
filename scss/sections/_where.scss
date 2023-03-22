@@ -18,7 +18,7 @@
         font-size: 35px;
     } 
 }
-@media (max-width: 575px) {
+/*@media (max-width: 575px) {
     .where_content {
         color:$color-black;
         &_title {
@@ -28,6 +28,20 @@
             font-size: 25px;
         }
     }
+}*/
+
+
+@media screen and (max-width: 575px) {
+    .where {
+        height: 50vh;
+    }
+
+    .where_content_title {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .where_content_text {
+        font-size: 1.5em;
+    }
 }
-
-

@@ -11,3 +11,8 @@
     padding-top: 15%;
 }
     
+@media screen and (max-width: 575px) {
+    .map {
+        height: 50vh;
+    }
+}
