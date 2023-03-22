@@ -363,11 +363,8 @@ button {
     padding-top: 10px;
     flex-wrap: wrap;
     display: block; }
-  .copyright_text {
-    width: 100%; }
   .social_pages {
-    margin-left: 25%;
-    width: 100%; } }
+    margin-left: 25%; } }
 
 @media screen and (max-width: 367px) {
   .footer {

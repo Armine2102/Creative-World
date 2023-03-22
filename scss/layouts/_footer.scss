@@ -73,7 +73,7 @@
     &_text {
         font-size: 14px;
         width: calc(100%/4);
-    margin-left: 4%;
+        margin-left: 4%;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -145,13 +145,11 @@
         flex-wrap: wrap;
         display: block;
     }
-    .copyright_text {
-            width: 100%;
-        }
+    
     
     .social_pages {
         margin-left: 25%;
-        width: 100%;
+        
     }
 }
 @media screen and (max-width: 367px) {
