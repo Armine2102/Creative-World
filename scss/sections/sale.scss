@@ -49,9 +49,26 @@
     }
 }
 @media screen and (max-width: 1199px) {
-    .sale_content_2 {
-        margin-left: -39%;
+    .sale_content {
+        flex-wrap: wrap;
+        &_2 {
+        padding: 70px 70px;
+        width: 59%;
+        margin: -17% auto 0;
+        animation: content 1s ease-in-out;
     }
+    &_1 {
+        margin: 0 auto;
+    }
+}
+@keyframes content {
+    0% {
+        margin: -17% 0 0;
+    }
+    100% {
+        margin: -17% auto 0;
+    }
+}
 }
 @media (max-width: 992px) {
    .sale_content {
@@ -71,10 +88,14 @@
 }
 @media (max-width: 767px) {
     .sale_title {
-        font-size: 27px;
+        font-size: 20px;
     }
     .sale_desc {
         font-size: 16px;
+    }
+    .sale_content_2 {
+        width: 87%;
+        padding: 50px 50px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -84,5 +105,7 @@
     .sale_content_2 {
         width: 80%;
         margin-left: 17%;
+        border-radius: 10px;
+        padding: 5px 9px;
     }
 }

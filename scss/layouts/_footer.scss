@@ -145,11 +145,12 @@
         flex-wrap: wrap;
         display: block;
     }
-    
-    
     .social_pages {
         margin-left: 25%;
-        
+    }
+    .copyright_text {
+        margin-left: 0;
+        width: 100%;
     }
 }
 @media screen and (max-width: 367px) {
