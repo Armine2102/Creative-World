@@ -630,7 +630,8 @@ button {
 }*/
 @media screen and (max-width: 575px) {
   .where {
-    height: 50vh; }
+    height: 50vh;
+    background-image: url(../img/next2.jpg); }
   .where_content_title {
     font-size: 2.5em;
     margin-bottom: 10px; }
@@ -1060,6 +1061,8 @@ button {
     padding: 9px 50px 9px 50px; } }
 
 @media screen and (max-width: 575px) {
+  .book {
+    background-image: url(../img/book2.jpg); }
   .book_title {
     font-size: 25px; }
   .book_btn {
