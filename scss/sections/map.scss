@@ -95,7 +95,12 @@
     display: block;
     z-index: 3;
 }
-
+.map_content_mob {
+    display: none;
+}
+.map_title_mob {
+    display: none;
+}
 }
 
 @media screen and (max-width: 991px) {
@@ -122,19 +127,60 @@
 @media screen and (max-width: 575px) {
     .map {
         background-image: url(../img/map320.jpg);
-        &_item_title {
-            padding: 14px;
+    }
+        .map_item_title_mob {
+            padding: 5px;
             background: linear-gradient(#0C4B70, #86B6CD);
-            font-size: 16px;
+            font-size: 14px;
+            color: $color-white;
+            text-align: center;
         }
-        &_title {
+        .map_title_mob {
             font-size: 35px;
+            display: block;
         }
-        &_content {
+        .map_content {
             display: none;
-            &_item_mob:active .map_item_desc {
+        }
+        .map_content_item_mob .map_item_desc_mob {
+            display: block;
+        }
+        .map .map_content_mob {
+            display: block;
+            width: 50%;
+            display: grid;
+            grid-template-columns: 50% 50% 50%;
+            grid-column-gap: 9%;
+            grid-row-gap: 17%;
+            margin-left: 10%;
+            grid-template-rows: 50% 50%;
+            font-family: $font;
+        }
+        .map_item_desc_mob {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: $color-white;
+            border: 1px solid $color-blue;
+            border-top: none;
+            padding-top: 10px;
+            display: none;
+            padding: 3px;
+            a {
+                text-decoration: none;
+                margin-top:  10px;
+                font-size: 18px;
                 display: block;
-            }
+                color: $color-black;
+                transition: .3s all;
+                &:hover {
+                    border-bottom: 1px solid $color-black;
+                }
+}
+        }
+        .map_item_desc_mob a {
+            font-size: 14px;
+            font-family: $font;
+            border-bottom: 1px solid $color-black;
         }
     }
-}
