@@ -431,8 +431,8 @@ button {
   .sale_content {
     flex-wrap: wrap; }
     .sale_content_2 {
-      padding: 70px 70px;
-      width: 59%;
+      padding: 86px 70px;
+      width: 65%;
       margin: -17% auto 0;
       animation: content 1s ease-in-out; }
     .sale_content_1 {
@@ -443,7 +443,7 @@ button {
     100% {
       margin: -17% auto 0; } } }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .sale_content {
     flex-wrap: wrap; }
     .sale_content_2 {
@@ -647,8 +647,7 @@ button {
   height: 100vh;
   width: 100%;
   padding-top: 5%;
-  font-family: Kanit;
-  margin-top: 15px; }
+  font-family: Kanit; }
   .find_subtitle {
     font-size: 16px; }
   .find_tour {
@@ -799,15 +798,19 @@ button {
     font-size: 40px; } }
 
 .map {
-  margin-top: 0;
   background-image: url(../img/budget2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 100vh;
-  width: 100%;
-  padding-top: 15%; }
+  width: 100%; }
+  .map_title {
+    color: #2E7696;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Kanit; }
   .map_btn {
     padding: 5px 5px;
     font-size: 14px;
@@ -829,9 +832,11 @@ button {
     background-color: #fff;
     border: 1px solid #064459;
     border-top: none;
-    padding-top: 10px; }
+    padding-top: 10px;
+    display: none;
+    padding: 3px; }
     .map_item_desc a {
-      text-decoration: dashed;
+      text-decoration: none;
       margin-top: 10px;
       font-size: 18px;
       display: block;
@@ -847,20 +852,62 @@ button {
     color: #fff;
     border-radius: 5px;
     padding: 3px; }
-  .map_content {
-    width: 100%;
-    font-family: Kanit; }
-    .map_content_1 {
-      display: flex;
-      justify-content: space-around; }
-      .map_content_1:nth-child(2) {
-        margin-top: 35%;
-        margin-left: 7%;
-        justify-content: space-between; }
+  .map .map_content_item {
+    position: absolute;
+    display: block; }
+    .map .map_content_item:nth-child(1) {
+      left: 18%;
+      top: 26%; }
+    .map .map_content_item:nth-child(2) {
+      left: 46%;
+      top: 31%; }
+    .map .map_content_item:nth-child(3) {
+      right: 21%;
+      top: 21%; }
+    .map .map_content_item:nth-child(4) {
+      left: 28%;
+      bottom: 25%; }
+    .map .map_content_item:nth-child(5) {
+      right: 44%;
+      bottom: 29%; }
+    .map .map_content_item:nth-child(6) {
+      right: 15%;
+      bottom: 17%; }
+  .map .map_content_item:hover {
+    cursor: pointer; }
+  .map .map_content_item:hover .map_item_desc {
+    display: block;
+    z-index: 3; }
+
+@media screen and (max-width: 991px) {
+  .map_item_title {
+    font-size: 18px; } }
+
+@media screen and (max-width: 768px) {
+  .map {
+    background-image: url(../img/map5.jpg); }
+  .map_item_desc a {
+    font-size: 12px; }
+  .map_item_title {
+    font-size: 14px; }
+  .map_item_title {
+    margin-top: 5%;
+    padding: 1px;
+    font-size: 12px; } }
 
 @media screen and (max-width: 575px) {
   .map {
-    height: 50vh; } }
+    background-image: url(../img/map320.jpg); }
+    .map_item_title {
+      padding: 14px;
+      background: linear-gradient(#0C4B70, #86B6CD);
+      font-size: 16px; }
+    .map_title {
+      font-size: 35px; }
+    .map_content {
+      display: none; }
+      .map_content_item_mob:active .map_item_desc {
+        display: block; } }
 
 .people {
   margin-top: 5px; }

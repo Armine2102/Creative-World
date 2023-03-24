@@ -52,8 +52,8 @@
     .sale_content {
         flex-wrap: wrap;
         &_2 {
-        padding: 70px 70px;
-        width: 59%;
+        padding: 86px 70px;
+        width: 65%;
         margin: -17% auto 0;
         animation: content 1s ease-in-out;
     }
@@ -70,7 +70,7 @@
     }
 }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
    .sale_content {
         flex-wrap: wrap;
         &_2{
