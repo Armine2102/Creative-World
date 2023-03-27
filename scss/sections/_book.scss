@@ -29,12 +29,13 @@
         font-size: 23px;
         border-radius: 20px;
         color: $color-title;
-        border: 2px solid $color-title;
+        border: none;
         cursor: pointer;
         margin: 20px auto;
         font-weight: 600;
-        background-color: $color-white;
+        background-color: $color-grey-1;
         display: block;
+        transition: all .3s ease-in-out;
         &:hover {
             background-color: $color-title;
             color: $color-white;
@@ -72,6 +73,9 @@
     }
 } 
 @media screen and (max-width: 575px) {
+    .book {
+        background-image: url(../img/book2.jpg);
+    }
     .book_title {
         font-size: 25px;
     }

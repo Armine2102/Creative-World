@@ -23,10 +23,11 @@
         margin: -45% auto 0;
         background-color: $color-white;
         display: block;
-        padding: 5px;
+        transition: all .3s ease-in-out;
+        border: 3px solid $color-white;
         &:hover {
             transform: translateY(-15px);
-            border: 3px solid $color-title;
+            border-color: $color-title;
             cursor: pointer;
         }
     }
@@ -81,5 +82,8 @@
     .people_img:active {
         transform: translateY(-15px);
         border: 3px solid $color-title;
+    }
+    .people {
+        margin-top: -8px;
     }
 }

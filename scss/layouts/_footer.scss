@@ -58,6 +58,9 @@
             fill: $color-blue;
         }
     }
+    svg {
+        transition: all .3s ease-in-out;
+    }
 }
 .copyright_mob {
     display: none;
@@ -70,7 +73,7 @@
     &_text {
         font-size: 14px;
         width: calc(100%/4);
-    margin-left: 4%;
+        margin-left: 4%;
     }
 }
 @media screen and (max-width: 1199px) {
@@ -142,12 +145,11 @@
         flex-wrap: wrap;
         display: block;
     }
-    .copyright_text {
-            width: 100%;
-        }
-    
     .social_pages {
         margin-left: 25%;
+    }
+    .copyright_text {
+        margin-left: 0;
         width: 100%;
     }
 }
