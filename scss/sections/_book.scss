@@ -75,6 +75,8 @@
 @media screen and (max-width: 575px) {
     .book {
         background-image: url(../img/book2.jpg);
+        background-attachment: local;
+        height: 260px;
     }
     .book_title {
         font-size: 25px;

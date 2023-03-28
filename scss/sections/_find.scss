@@ -95,6 +95,8 @@
 }
 @media screen and (max-width: 575px) {
     .find {
+        background-attachment: local;
+        height: 520px;
         &_tour {
         width: 90%;
         margin-left: 15px;
