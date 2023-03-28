@@ -1,7 +1,7 @@
 .sale {
-    margin-top: 0;
+    margin-top: 15px;
     margin-left: -50px;
-    border: 1px solid $color-blue;
+    border-bottom: 1px solid $color-blue;
     &_title {
         font-size: 34px;
         padding-bottom: 15px;
@@ -49,6 +49,9 @@
     }
 }
 @media screen and (max-width: 1199px) {
+    .sale {
+        border: none;
+    }
     .sale_content {
         flex-wrap: wrap;
         &_2 {

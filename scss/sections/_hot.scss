@@ -1,6 +1,131 @@
 .hot {
     margin-top: 0;
+    padding: 0 7% 3% 7%;
+    font-family: $font;
     &_content_item {
         display: flex;
+        border: 2px solid $color-border;
+        position: relative;
+        overflow: hidden;
+    }
+    &_title {
+        @include title;
+        margin: 20px auto;
+    }
+    &_text {
+        text-align: left;
+        padding: 3%;
+        padding-left: 10%;
+        &_title {
+            font-size: 25px;
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+                color: $color-blue;
+            }
+        }
+    }
+    &_desc {
+        font-size: 18px;
+    }
+    &_btn {
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #72AEC5;
+        color: $color-white;
+        border: none;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: $color-blue;
+            cursor: pointer;
+        }
+    }
+    &_value {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        background-color: #72AEC5;
+        color: $color-white;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    &_image {
+        display: block;
+    }
+    .hot_image img {
+        transition: all .3s ease-in-out;
+        display: block;
+    }
+    .hot_image:hover img {
+        transform: scale(1.1);
+    }
+    .hot_content_item:nth-child(2){
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .hot {
+        padding: 0 3% 3% 3%;
+        &_value {
+            padding: 15px;
+        }
+        &_text_title {
+            margin-top: -1px;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .hot_image {
+        width: calc(100%/2);
+    }
+    .hot_text {
+        margin-top: 33px;
+        padding-left: 9%;
+        &_title {
+            font-size: 22px;
+        }
+    }
+    .hot_value {
+        padding: 12px;
+        font-size: 18px;
+    }
+    .hot_desc {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hot_content_item {
+        flex-wrap: wrap;
+        border: none;
+    }
+    .hot_text {
+        padding: 0;
+    }
+    .hot_value {
+        bottom: 0;
+        top: 90%;
+    }
+    .hot_btn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .hot_title {
+        margin: 0px auto;
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .hot_image {
+        width: 300px;
+        height: 300px;
+    }
+    .hot .hot_image img {
+        transform: none;
     }
 }

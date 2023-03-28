@@ -379,9 +379,9 @@ button {
     background: linear-gradient(#77B4CA 88%, #33637C 19%); } }
 
 .sale {
-  margin-top: 0;
+  margin-top: 15px;
   margin-left: -50px;
-  border: 1px solid #064459; }
+  border-bottom: 1px solid #064459; }
   .sale_title {
     font-size: 34px;
     padding-bottom: 15px;
@@ -432,6 +432,8 @@ button {
     margin-left: -25%; } }
 
 @media screen and (max-width: 1199px) {
+  .sale {
+    border: none; }
   .sale_content {
     flex-wrap: wrap; }
     .sale_content_2 {
@@ -634,7 +636,7 @@ button {
 }*/
 @media screen and (max-width: 575px) {
   .where {
-    height: 50vh;
+    height: 210px;
     background-image: url(../img/next2.jpg);
     background-attachment: local; }
   .where_content_title {
@@ -653,8 +655,7 @@ button {
   height: 100vh;
   width: 100%;
   padding-top: 5%;
-  font-family: Kanit;
-  margin-top: 15px; }
+  font-family: Kanit; }
   .find_subtitle {
     font-size: 16px; }
   .find_tour {
@@ -726,9 +727,12 @@ button {
       padding: 10px 60px 10px 60px; } }
 
 @media screen and (max-width: 575px) {
-  .find_tour {
-    width: 90%;
-    margin-left: 15px; } }
+  .find {
+    background-attachment: local;
+    height: 520px; }
+    .find_tour {
+      width: 90%;
+      margin-left: 15px; } }
 
 .services {
   background-image: url(../img/bcfon.jpg);
@@ -950,7 +954,9 @@ button {
 
 @media screen and (max-width: 575px) {
   .book {
-    background-image: url(../img/book2.jpg); }
+    background-image: url(../img/book2.jpg);
+    background-attachment: local;
+    height: 260px; }
   .book_title {
     font-size: 25px; }
   .book_btn {
@@ -1065,7 +1071,8 @@ button {
 
 @media screen and (max-width: 575px) {
   .number {
-    height: 117vh; }
+    height: 620px;
+    background-attachment: local; }
   .number_content_items {
     height: 140px;
     font-size: 16px;
@@ -1079,6 +1086,116 @@ button {
     font-size: 45px; } }
 
 .hot {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0 7% 3% 7%;
+  font-family: Kanit; }
   .hot_content_item {
-    display: flex; }
+    display: flex;
+    border: 2px solid #E1E1E1;
+    position: relative;
+    overflow: hidden; }
+  .hot_title {
+    color: #2E7696;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Kanit;
+    margin: 20px auto; }
+    .hot_title:after {
+      display: block;
+      content: "";
+      text-align: center;
+      width: 15%;
+      margin: 0 auto;
+      height: 2px;
+      background-color: #2E7696; }
+  .hot_text {
+    text-align: left;
+    padding: 3%;
+    padding-left: 10%; }
+    .hot_text_title {
+      font-size: 25px;
+      margin-top: 20px; }
+      .hot_text_title:hover {
+        cursor: pointer;
+        color: #064459; }
+  .hot_desc {
+    font-size: 18px; }
+  .hot_btn {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 15px;
+    background-color: #72AEC5;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .3s ease-in-out; }
+    .hot_btn:hover {
+      background-color: #064459;
+      cursor: pointer; }
+  .hot_value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #72AEC5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px; }
+  .hot_image {
+    display: block; }
+  .hot .hot_image img {
+    transition: all .3s ease-in-out;
+    display: block; }
+  .hot .hot_image:hover img {
+    transform: scale(1.1); }
+  .hot .hot_content_item:nth-child(2) {
+    margin-top: 15px; }
+
+@media screen and (max-width: 1199px) {
+  .hot {
+    padding: 0 3% 3% 3%; }
+    .hot_value {
+      padding: 15px; }
+    .hot_text_title {
+      margin-top: -1px; } }
+
+@media screen and (max-width: 991px) {
+  .hot_image {
+    width: calc(100%/2); }
+  .hot_text {
+    margin-top: 33px;
+    padding-left: 9%; }
+    .hot_text_title {
+      font-size: 22px; }
+  .hot_value {
+    padding: 12px;
+    font-size: 18px; }
+  .hot_desc {
+    font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .hot_content_item {
+    flex-wrap: wrap;
+    border: none; }
+  .hot_text {
+    padding: 0; }
+  .hot_value {
+    bottom: 0;
+    top: 90%; }
+  .hot_btn {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .hot_title {
+    margin: 0px auto;
+    font-size: 45px; } }
+
+@media screen and (max-width: 575px) {
+  .hot_image {
+    width: 300px;
+    height: 300px; }
+  .hot .hot_image img {
+    transform: none; } }
