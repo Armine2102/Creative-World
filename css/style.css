@@ -381,7 +381,7 @@ button {
 .sale {
   margin-top: 0;
   margin-left: -50px;
-  border-bottom: 1px solid #064459; }
+  border: 1px solid #064459; }
   .sale_title {
     font-size: 34px;
     padding-bottom: 15px;
@@ -635,7 +635,8 @@ button {
 @media screen and (max-width: 575px) {
   .where {
     height: 50vh;
-    background-image: url(../img/next2.jpg); }
+    background-image: url(../img/next2.jpg);
+    background-attachment: local; }
   .where_content_title {
     font-size: 2.5em;
     margin-bottom: 10px; }
@@ -652,7 +653,8 @@ button {
   height: 100vh;
   width: 100%;
   padding-top: 5%;
-  font-family: Kanit; }
+  font-family: Kanit;
+  margin-top: 15px; }
   .find_subtitle {
     font-size: 16px; }
   .find_tour {
@@ -1075,3 +1077,8 @@ button {
     margin-top: 3px; }
   .number_content_item {
     font-size: 45px; } }
+
+.hot {
+  margin-top: 0; }
+  .hot_content_item {
+    display: flex; }
