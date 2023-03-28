@@ -5,10 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass scss/style.scss css/style.css -w",
-    "dev": "node-sass scss/style.scss css/style.css",
+    "watch": "node-sass dist/scss/style.scss dist/css/style.css -w",
+    "dev": "node-sass dist/scss/style.scss dist/css/style.css",
     "predeploy": "npm run dev",
-    "deploy": "gh-pages -d . -b gh-pages -x node_modules"
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
   "keywords": [],
   "author": "",
