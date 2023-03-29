@@ -365,7 +365,7 @@ button {
   .copyright {
     display: none; }
   .copyright_mob {
-    padding-top: 10px;
+    padding-top: 15px;
     flex-wrap: wrap;
     display: block; }
   .social_pages {
@@ -376,7 +376,7 @@ button {
 
 @media screen and (max-width: 367px) {
   .footer {
-    background: linear-gradient(#77B4CA 88%, #33637C 19%); } }
+    background: linear-gradient(#77B4CA 90%, #33637C 19%); } }
 
 .sale {
   margin-top: 15px;
@@ -1006,7 +1006,8 @@ button {
     display: block;
     bottom: 35%;
     left: 20%;
-    padding: 13px; }
+    padding: 13px;
+    box-shadow: 3px 3px 15px white; }
   .gallery_img {
     transition: none; } }
 
