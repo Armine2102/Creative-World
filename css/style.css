@@ -359,7 +359,7 @@ button {
 
 @media screen and (max-width: 575px) {
   .footer {
-    background: linear-gradient(#77B4CA 85%, #33637C 15%); }
+    background: linear-gradient(#77B4CA 87%, #33637C 13%); }
     .footer_block {
       width: 90%; }
   .copyright {
@@ -1039,7 +1039,7 @@ button {
   .gal_img_name {
     display: block;
     bottom: 35%;
-    left: 20%;
+    left: 15%;
     padding: 13px;
     box-shadow: 3px 3px 15px white; }
   .gallery_img {
