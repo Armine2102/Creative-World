@@ -376,7 +376,7 @@ button {
 
 @media screen and (max-width: 367px) {
   .footer {
-    background: linear-gradient(#77B4CA 87%, #33637C 20%); } }
+    background: linear-gradient(#77B4CA 85%, #33637C 15%); } }
 
 .sale {
   margin-top: 15px;
