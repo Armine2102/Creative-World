@@ -376,10 +376,6 @@ button {
   .footer_content_title {
     padding-top: 20px; } }
 
-@media screen and (max-width: 367px) {
-  .footer {
-    background: linear-gradient(#77B4CA 87%, #33637C 13%); } }
-
 .sale {
   margin-top: 15px;
   margin-left: -50px;
