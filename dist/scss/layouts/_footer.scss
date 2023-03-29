@@ -132,7 +132,7 @@
 }
 @media screen and (max-width: 575px) {
     .footer {
-        background: linear-gradient(#77B4CA 85%, #33637C 19%);
+        background: linear-gradient(#77B4CA 87%, #33637C 13%);
     &_block {
         width: 90%;
     }
@@ -141,7 +141,7 @@
         display: none;
     }
     .copyright_mob {
-        padding-top: 10px;
+        padding-top: 15px;
         flex-wrap: wrap;
         display: block;
     }
@@ -152,9 +152,7 @@
         margin-left: 0;
         width: 100%;
     }
-}
-@media screen and (max-width: 367px) {
-    .footer {
-        background: linear-gradient(#77B4CA 88%, #33637C 19%);
+    .footer_content_title {
+        padding-top: 20px;
     }
 }

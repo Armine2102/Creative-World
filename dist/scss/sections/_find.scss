@@ -9,8 +9,16 @@
     width: 100%;
     padding-top: 5%;
     font-family: $font;
+    position: relative;
+    &_img {
+        position: absolute;
+        left: 90%;
+        top: 0;
+        animation: airplane 7s infinite ease-in-out;
+    }
     &_subtitle {
         font-size: 16px;
+        margin-left: 15px;
     }
     &_tour {
         width: calc(100%/3);
@@ -66,7 +74,20 @@
             }
         }
     }
+    @keyframes airplane {
+        0% {
+            left: 0;
+            top: 0;
+        }
+        100% {
+            left: 85%;
+            top: 0;
+        }
+    }
     @media screen and (max-width: 1199px) {
+        .find {
+            padding-top: 7%;
+        }
         .find_tour {
             height: 500px;
         .find_button {
@@ -83,23 +104,46 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .find {
+        padding-top: 10%;
+    }
     .find_select {
         padding: 8px;
     }
     .find_tour {
-        height: 470px;
+        height: 460px;
     .find_button {
         padding: 10px 60px 10px 60px;
+    }
+}
+@keyframes airplane {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 80%;
+        top: 0;
     }
 }
 }
 @media screen and (max-width: 575px) {
     .find {
         background-attachment: local;
-        height: 520px;
+        padding-top: 17%;
         &_tour {
         width: 90%;
         margin-left: 15px;
+    }
+}
+@keyframes airplane {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: 60%;
+        top: 0;
     }
 }
 }
