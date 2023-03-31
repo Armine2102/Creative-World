@@ -17,7 +17,7 @@
             margin-right: 0;
         }
         &:hover .gallery_img {
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
         &:hover .gal_img_name{
             display: block;
@@ -25,7 +25,7 @@
     }
     &_img {
         display: block;
-        transition: 1s;
+        transition: 1.5s;
     }
 }
 .gal_img_name  {

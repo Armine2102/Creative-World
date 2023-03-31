@@ -997,12 +997,12 @@ button {
     .gallery_image:nth-child(6) {
       margin-right: 0; }
     .gallery_image:hover .gallery_img {
-      transform: scale(1.1); }
+      transform: scale(1.2); }
     .gallery_image:hover .gal_img_name {
       display: block; }
   .gallery_img {
     display: block;
-    transition: 1s; }
+    transition: 1.5s; }
 
 .gal_img_name {
   position: absolute;
