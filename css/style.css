@@ -39,7 +39,7 @@ button {
   font-family: 'Kanit'; }
 
 @font-face {
-  font-family: Dancing Script; }
+  font-family: 'Dancing Script'; }
 
 /*color*/
 /*fonts*/
@@ -741,7 +741,8 @@ button {
 @media screen and (max-width: 575px) {
   .find {
     background-attachment: local;
-    padding-top: 17%; }
+    padding-top: 17%;
+    height: 102vh; }
     .find_tour {
       width: 90%;
       margin-left: 15px; }
