@@ -165,7 +165,6 @@
 }
 @media (max-width: 575px) {
     .header {
-        background-image: linear-gradient(#0C4B70, #86B6CD, #0C4B70, );
         height:95vh;
     }
     .header_logo {
@@ -173,8 +172,8 @@
         margin-left: 2%;
     }
     .header_button {
-            @include button_mobile;
-            margin-right: -30px;
+        @include button_mobile;
+        margin-right: -30px;
     }
     .content {
         top: 35%;
